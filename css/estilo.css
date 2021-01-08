@@ -1,0 +1,202 @@
+  *{
+     margin:0px;
+     padding:0px;
+     box-sizing:border-box;
+ }
+ 
+ {
+     font-size: 62,5%; 
+  }
+ /* Metodologia BEM*/
+ .header{
+    height: 20vh;
+    background-color: bisque;
+    }
+
+ .header__logo{
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-around;
+
+   
+    }
+
+ /* .header__nav{ /* Navegabilidad de paginas*/
+    text-align:center;
+    list-style:none;
+    font: size 10px;;
+    padding:10px;
+    display: flex;
+    flex-direction: row-reverse  ;
+    justify-content: space-evenly;
+    }
+  li{
+     display:inline-block;
+     width:auto;
+     position:relative;
+     font-size:20px;
+     border: solid 2px rgb(214, 52, 136);
+     background-color: rgb(172, 240, 225);
+ }
+ ul li ul {
+     position: absolute;
+     display:none;
+     width:100%;
+ }
+ ul ul li{
+     display: block;
+     width: 100%;
+ }
+ ul li :hover ul {
+     display:block;
+ }
+ li:hover{
+     background-color: rgb(189, 189, 230); */
+
+  } 
+  .contenedor{ /* desafio grid*/
+    width: 90%;
+    max-width: 1000px;
+    border: 20px blue ;
+    margin: auto;
+    font-size: 16px;  
+    display: grid;
+    grid-template-rows: 100px ;
+    grid-gap: 20px;
+    
+ 
+           
+}
+.contenedor__div{
+    color: black;
+    display: block;
+    padding: 10px;
+    background-color: rgb(173, 90, 108);
+                   
+}
+.contenedor__div img{
+    width: 200px;
+    height: auto;
+   
+}
+body{
+    font-family: co-text, sans-serif;
+    font-style: normal;
+    background-color: white (238, 186, 216);
+    background-repeat: no-repeat;
+    background-position: center center;
+ } 
+
+/*imagen carrusel*/
+ .carrusel{
+width:800px;
+margin-top: 1opx;
+margin:auto;
+padding: 10px; 
+}
+.servicios{
+    margin-top: 20px;
+    margin: auto;
+}
+/*tabla*/
+.tabla{
+    margin: auto;
+    padding: 5px;
+    width: auto;
+    height: auto;
+}
+.contactos{
+    margin: auto;
+    
+}
+ .tarjetas{ /*Desafio flexbox */
+    font-size: 15px;
+    border: solid  black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+        
+}
+
+.tarjeta{
+    flex:0px 0px 200px;
+    margin: 10px;
+    border:1px solid cyan;
+    box-shadow:2px 2px 6px 0px red ;
+    font-size: 16px;
+}
+.tarjeta img {
+    max-width: 100%;
+  }
+  .tarjeta .text {
+    padding: 0 20px 20px;
+  }
+  .tarjeta .text > button {
+    background: rgb(187, 120, 120);
+    border: 0;
+    color: rgb(168, 218, 190);
+    padding: 10px;
+    width: 100%;
+    
+   }
+   .tarjeta button:hover{ /*animación a botones*/ 
+       background-color: rgb(18, 19, 18);
+       display: block;
+       font-size: 20px;
+   }
+    .animacion{
+    color:rgb(7, 7, 7);
+    text-align: center ;
+    font-size: 40px;
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+    
+   }
+    @keyframes aparecer{
+       0%{
+           opacity: 0;
+       }
+       100%{
+           opacity: 1;
+           background-color: rgb(218, 76, 223);
+       } 
+     
+   } 
+     
+   
+  a{
+     text-decoration: none;
+     color:black;
+ }
+ .titulo{
+     text-align: center ;
+ }
+ ul{
+     list-style-type: none;
+ }
+
+ h1{
+     color:rgb(7, 7, 7);
+     text-align: center;
+     
+ }
+ h2{
+     color: rgb(13, 13, 14);
+ }
+p{
+    color: black ;
+}
+footer{
+    background-image: linear-gradient(to top, rgb(199, 205, 207), rgb(165, 157, 159));
+    padding:5px;
+    margin: auto;
+    justify-content: space-around;
+}
+ 
+
+
